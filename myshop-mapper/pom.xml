@@ -29,5 +29,18 @@
    		<artifactId>myshop-common-domain</artifactId>
    		<version>${project.version}</version>
    	</dependency>
+   	<dependency>
+          <groupId>tk.mybatis</groupId>
+          <artifactId>mapper-spring-boot-starter</artifactId>
+    </dependency>
+    <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+     </dependency>
+     
+      <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+      </dependency>
   </dependencies>
 </project>
