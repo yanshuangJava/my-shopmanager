@@ -30,7 +30,7 @@
 
         <!-- Commons Settings -->
         <kyro.version>0.42</kyro.version>
-        <mysql.version>8.0.12</mysql.version>
+       <!--  <mysql.version>6.0.6</mysql.version> -->
         <fastdfs.version>1.27</fastdfs.version>
     </properties>
     

@@ -19,11 +19,7 @@
   </properties>
 
   <dependencies>
-    <dependency>
-   		<groupId>com.sitech</groupId>
-   		<artifactId>myshop-common</artifactId>
-   		<version>${project.version}</version> 
-   	</dependency>
+ 
    	<dependency>
    		<groupId>com.sitech</groupId>
    		<artifactId>myshop-common-domain</artifactId>
