@@ -36,6 +36,7 @@
                     <overwrite>true</overwrite>
                     <verbose>true</verbose>
                 </configuration>
+                
                 <dependencies>
                     <dependency>
                         <groupId>mysql</groupId>
