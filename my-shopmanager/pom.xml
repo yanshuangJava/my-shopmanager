@@ -16,7 +16,6 @@
     
     <properties>
         <!-- Environment Settings -->
-        <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -102,6 +101,7 @@
 	                <configuration>
 	                    <showWarnings>true</showWarnings>
 	                </configuration>
+	                
 	            </plugin>
 	
 	            <!-- 打包 jar 文件时，配置 manifest 文件，加入 lib 包的 jar 依赖 -->
