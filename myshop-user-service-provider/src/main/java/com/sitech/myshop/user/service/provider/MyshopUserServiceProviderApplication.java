@@ -7,6 +7,8 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import com.alibaba.dubbo.container.Main;
+
 @SpringBootApplication(scanBasePackages = "com.sitech.myshop")
 @EnableHystrixDashboard
 @EnableHystrix
@@ -16,5 +18,6 @@ public class MyshopUserServiceProviderApplication {
 	
 	public static void main(String[] args) {
 		SpringApplication.run(MyshopUserServiceProviderApplication.class, args);
+		Main.main(args);
 	}
 }

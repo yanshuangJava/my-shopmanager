@@ -1,4 +1,4 @@
-package com.sitech.myshopcommondomain;
+package com.sitech.myshop.common.domain;
 
 import javax.persistence.*;
 
