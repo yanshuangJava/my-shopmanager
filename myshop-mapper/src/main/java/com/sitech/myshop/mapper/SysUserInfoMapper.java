@@ -1,4 +1,4 @@
-package com.sitech.myshopmapper;
+package com.sitech.myshop.mapper;
 
 import com.sitech.myshopcommondomain.SysUserInfo;
 import tk.mybatis.mapper.MyMapper;
