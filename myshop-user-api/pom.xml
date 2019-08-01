@@ -7,10 +7,10 @@
 		  <version>0.0.1-SNAPSHOT</version>
 		  <relativePath>../my-shopmanager/pom.xml</relativePath>
 	</parent>
-  <artifactId>myshop-common-domain</artifactId>
+  <artifactId>myshop-user-api</artifactId>
   <packaging>jar</packaging>
 
-  <name>myshop-common-domain</name>
+  <name>myshop-user-api</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -18,11 +18,10 @@
   </properties>
 
   <dependencies>
-   	<dependency>
+    	<dependency>
    		<groupId>com.sitech</groupId>
-   		<artifactId>myshop-common</artifactId>
-   		<version>${project.version}</version> 
+   		<artifactId>myshop-common-domain</artifactId>
+   		<version>${project.version}</version>
    	</dependency>
-   	
   </dependencies>
 </project>
