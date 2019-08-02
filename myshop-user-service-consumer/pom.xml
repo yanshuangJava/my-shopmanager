@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+	<parent>
+		 <groupId>com.sitech</groupId>
+		  <artifactId>my-shopmanager</artifactId>
+		  <version>0.0.1-SNAPSHOT</version>
+		  <relativePath>../my-shopmanager/pom.xml</relativePath>
+	</parent>
+
+  <artifactId>myshop-user-service-consumer</artifactId>
+  <packaging>jar</packaging>
+
+  <name>myshop-user-service-consumer</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <!-- Spring Boot Starter Settings -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- <dependency>
+            <groupId>com.ctrip.framework.apollo</groupId>
+            <artifactId>apollo-client</artifactId>
+            <version>1.1.0</version>
+        </dependency> -->
+        
+        <dependency>
+        	<groupId>com.sitech</groupId>
+		  <artifactId>myshop-backend</artifactId>
+		  <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        
+        <dependency>
+        	<groupId>com.sitech</groupId>
+		  <artifactId>myshop-dubbo-common</artifactId>
+		  <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        
+        <dependency>
+        	<groupId>com.sitech</groupId>
+		  <artifactId>myshop-user-api</artifactId>
+		  <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+  </dependencies>
+</project>
