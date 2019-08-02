@@ -1,4 +1,4 @@
-package com.sitech.myshopcommondomain;
+package com.sitech.myshop.common.domain;
 
 import javax.persistence.*;
 
@@ -18,6 +18,8 @@ public class SysUserInfo {
      */
     private String password;
 
+    private Integer age;
+
     /**
      * 姓名
      */
@@ -33,10 +35,7 @@ public class SysUserInfo {
      */
     private String solt;
 
-    /**
-     * 姓别
-     */
-    private Integer sex;
+    private String sex;
 
     /**
      * @return id
@@ -86,6 +85,20 @@ public class SysUserInfo {
      */
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    /**
+     * @return age
+     */
+    public Integer getAge() {
+        return age;
+    }
+
+    /**
+     * @param age
+     */
+    public void setAge(Integer age) {
+        this.age = age;
     }
 
     /**
@@ -143,20 +156,16 @@ public class SysUserInfo {
     }
 
     /**
-     * 获取姓别
-     *
-     * @return sex - 姓别
+     * @return sex
      */
-    public Integer getSex() {
+    public String getSex() {
         return sex;
     }
 
     /**
-     * 设置姓别
-     *
-     * @param sex 姓别
+     * @param sex
      */
-    public void setSex(Integer sex) {
+    public void setSex(String sex) {
         this.sex = sex;
     }
 }

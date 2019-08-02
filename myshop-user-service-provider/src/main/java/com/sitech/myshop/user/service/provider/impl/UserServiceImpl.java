@@ -20,12 +20,23 @@ public class UserServiceImpl implements UserService {
 	@Override
 	@HystrixCommand(commandProperties = {
             @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "10"),
-            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "2000")
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "20000")
             
     },fallbackMethod = "error" )
 	public List<SysUserInfo> selectAll() {
+		System.out.println("我已经到达。。。。");
+		List<SysUserInfo> list= null;
+		try {
+			list = sysUserInfoMapper.selectAll();
+			for(SysUserInfo s:list) {
+				System.out.println(s.getName());
+			}
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
 		
-		return sysUserInfoMapper.selectAll();
+		return list;
 	}
 	
 	public List<SysUserInfo> error(){

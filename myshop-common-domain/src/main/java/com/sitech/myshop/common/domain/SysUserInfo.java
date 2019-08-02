@@ -1,9 +1,11 @@
 package com.sitech.myshop.common.domain;
 
+import java.io.Serializable;
+
 import javax.persistence.*;
 
 @Table(name = "sys_user_info")
-public class SysUserInfo {
+public class SysUserInfo implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -17,6 +19,8 @@ public class SysUserInfo {
      * ����
      */
     private String password;
+
+    private Integer age;
 
     /**
      * ����
@@ -33,10 +37,7 @@ public class SysUserInfo {
      */
     private String solt;
 
-    /**
-     * �ձ�
-     */
-    private Integer sex;
+    private String sex;
 
     /**
      * @return id
@@ -86,6 +87,20 @@ public class SysUserInfo {
      */
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    /**
+     * @return age
+     */
+    public Integer getAge() {
+        return age;
+    }
+
+    /**
+     * @param age
+     */
+    public void setAge(Integer age) {
+        this.age = age;
     }
 
     /**
@@ -143,20 +158,16 @@ public class SysUserInfo {
     }
 
     /**
-     * ��ȡ�ձ�
-     *
-     * @return sex - �ձ�
+     * @return sex
      */
-    public Integer getSex() {
+    public String getSex() {
         return sex;
     }
 
     /**
-     * �����ձ�
-     *
-     * @param sex �ձ�
+     * @param sex
      */
-    public void setSex(Integer sex) {
+    public void setSex(String sex) {
         this.sex = sex;
     }
 }
